@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datara 🔎 | Tips Reales</title>
 
+    <meta name="verify-admitad" content="d23c1d0743" />
+    <style>
+        :root {
+            /* Color exacto del fondo de tu logo para que se vea profesional */
+            --azul-profundo: #010c1e; 
+            --azul-brillante: #007bff;
+            --verde-menta: #00f2c3;
+            --texto-suave: #b0c4de;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: var(--azul-profundo); 
+            color: white; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            min-height: 100vh;
+        }
+
+        .wrapper { 
+            width: 100%; 
+            max-width: 400px; 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+        
+        /* Ajuste del Logo */
+        .logo-datara { 
+            width: 180px; 
+            height: auto; 
+            margin-bottom: 25px; 
+            display: inline-block;
+        }
+
+        .bio { 
+            font-size: 16px; 
+            color: var(--texto-suave); 
+            margin-bottom: 35px; 
+            line-height: 1.6; 
+            font-weight: 400;
+        }
+        
+        /* Estilo de los Botones */
+        .link-btn {
+            display: block;
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Efecto al tocar el botón en el celular */
+        .link-btn:active {
+            transform: scale(0.96);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Botón principal resaltado */
+        .destacado { 
+            background: linear-gradient(135deg, var(--azul-brillante), var(--verde-menta)); 
+            color: #010c1e; 
+            border: none; 
+            box-shadow: 0 4px 15px rgba(0, 242, 195, 0.2);
+        }
+
+        /* Contenedor del Correo Temporal */
+        .temp-mail-box {
+            margin-top: 40px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid var(--verde-menta);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        iframe { 
+            width: 100%; 
+            height: 400px; 
+            border: none; 
+        }
+
+        .mail-label { 
+            font-size: 12px; 
+            font-weight: bold; 
+            color: #010c1e; 
+            padding: 12px 0; 
+            display: block; 
+            background: #f1f3f5;
+            letter-spacing: 1px;
+        }
+
+        .footer { 
+            margin-top: 60px; 
+            font-size: 10px; 
+            color: #5d7a9d; 
+            letter-spacing: 3px; 
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="logo-datara.png" alt="Datara Logo" class="logo-datara">
+        
+        <p class="bio">Aprovecha tu tiempo y dinero con tips reales. <br>Sin estafas, solo ahorro. 🇲🇽</p>
+
+        <a href="#" class="link-btn destacado">💸 Gana bonos con Mercado Pago</a>
+        
+        <a href="#" class="link-btn">🎁 Ofertas Flash del día (Amazon)</a>
+        
+        <a href="https://www.facebook.com/tu-pagina-aqui" target="_blank" class="link-btn" style="color: #1877F2;">
+            🔵 Síguenos en Facebook
+        </a>
+
+        <div class="temp-mail-box">
+            <span class="mail-label">🛡️ TU CORREO TEMPORAL ANTI-SPAM</span>
+            <iframe src="https://emailfake.com/"></iframe>
+        </div>
+
+        <div class="footer">DATARA 🔎 2026</div>
+    </div>
+
+</body>
+  </html>
