@@ -3,134 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datara 🔎 | Centro de Mandos</title>
-
-    <meta name="verify-admitad" content="d23c1d0743" />
-
+    <title>Datara 🔎 | Tips y Ahorro</title>
     <style>
-        :root {
-            --azul-fondo: #010c1e; 
-            --azul-acento: #007bff;
-            --verde-exito: #00f2c3;
-            --texto-suave: #b0c4de;
-            --blanco: #ffffff;
-        }
+        /* 1. RESETEO PARA QUE NADA SE MUEVA */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            background-color: var(--azul-fondo); 
-            color: var(--blanco); 
-            margin: 0; 
-            display: flex; 
-            justify-content: center; 
+            background-color: #010c1e; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            display: flex;
+            justify-content: center;
+            color: white;
             min-height: 100vh;
         }
 
-        .app-container { 
-            width: 100%; 
-            max-width: 420px; 
-            padding: 30px 20px; 
-            text-align: center; 
-        }
-        
-        /* Logo centrado y profesional */
-        .app-logo { 
-            width: 150px; 
-            height: auto; 
-            margin-bottom: 15px; 
+        /* 2. EL CONTENEDOR QUE CENTRA TODO */
+        .app-wrapper {
+            width: 100%;
+            max-width: 400px; /* Tamaño ideal de celular */
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente */
         }
 
-        .tagline { 
-            font-size: 14px; 
-            color: var(--texto-suave); 
-            margin-bottom: 30px; 
-            letter-spacing: 1px;
-            text-transform: uppercase;
+        .logo-datara {
+            width: 180px;
+            margin-bottom: 10px;
         }
 
-        /* Banner de "Último Post" (Para mover tráfico a Blogger) */
-        .news-banner {
-            background: rgba(0, 123, 255, 0.2);
-            border: 1px solid var(--azul-acento);
-            padding: 12px;
-            border-radius: 12px;
-            margin-bottom: 25px;
+        .tagline {
             font-size: 14px;
-            text-decoration: none;
-            color: var(--blanco);
+            color: #b0c4de;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* 3. BOTONES (Ancho total y centrados) */
+        .btn-link {
+            width: 100%; /* Ocupa todo el ancho disponible */
             display: block;
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            font-weight: 600;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: 0.3s;
         }
-        .news-banner:active { transform: scale(0.98); }
-        .news-banner span { color: var(--verde-exito); font-weight: bold; }
 
-        /* Estilo de Botones tipo Aplicación */
-        .nav-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--blanco);
-            text-decoration: none;
-            padding: 20px;
-            margin-bottom: 12px;
-            border-radius: 18px;
-            font-weight: 600;
-            font-size: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        /* Botón de Ofertas Resaltado */
-        .btn-featured { 
-            background: linear-gradient(135deg, var(--azul-acento), #00c6ff); 
+        /* Botón que resalta (Ofertas) */
+        .btn-destacado {
+            background: #007bff;
             border: none;
             box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
         }
 
-        .nav-btn:active {
-            transform: scale(0.95);
-            background: rgba(255, 255, 255, 0.12);
-        }
+        /* Botón de Facebook */
+        .btn-fb { border-color: #1877F2; color: #1877F2; }
 
-        .icon { margin-right: 12px; font-size: 20px; }
-
-        .footer { 
-            margin-top: 50px; 
-            font-size: 10px; 
-            color: #4b5d73; 
-            letter-spacing: 2px; 
+        .footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #4b5d73;
+            letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
 
-    <div class="app-container">
-        <img src="logo-datara.png" alt="Datara" class="app-logo">
-        <div class="tagline">Tips Reales • Ahorro • Seguridad</div>
+    <div class="app-wrapper">
+        
+        <img src="logo-datara.png" alt="Datara" class="logo-datara">
+        <p class="tagline">Información Clara 🔎</p>
 
-        <a href="https://tupagina.blogspot.com" class="news-banner">
-            <span>NUEVO:</span> ¿Cómo evitar el spam en tu correo? ⮕
+        <a href="TU_LINK_ADMITAD" class="btn-link btn-destacado">
+            🎁 Ofertas y Promociones
         </a>
 
-        <a href="TU_LINK_DE_ADMITAD" class="nav-btn btn-featured">
-            <span class="icon">🎁</span> Ofertas y Promociones
+        <a href="TU_LINK_BLOGGER" class="btn-link">
+            📝 Leer Tips en el Blog
         </a>
 
-        <a href="#" class="nav-btn">
-            <span class="icon">💰</span> Páginas que sí pagan
+        <a href="#" class="btn-link">
+            💰 Páginas que sí pagan
         </a>
 
-        <a href="https://tupagina.blogspot.com" class="nav-btn">
-            <span class="icon">📝</span> Ver Blog de Tips Completo
+        <a href="https://www.facebook.com/Dataraonline" target="_blank" class="btn-link btn-fb">
+            🔵 Comunidad en Facebook
         </a>
 
-        <a href="https://www.facebook.com/Dataraonline" target="_blank" class="nav-btn" style="border-color: #1877F2;">
-            <span class="icon">🔵</span> Comunidad en Facebook
-        </a>
+        <div class="footer">DATARA 🔎 2026</div>
 
-        <div class="footer">DATARA 🔎 2026 • MÉXICO</div>
     </div>
 
 </body>
-    </html>
+            </html>
